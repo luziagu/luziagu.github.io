@@ -1,0 +1,15 @@
+a { color: white;
+    background: darkslategrey;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.nothing {
+    background-color: white
+
+}
+.HeadLines {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
