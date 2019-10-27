@@ -1,0 +1,113 @@
+body { 
+    background-image: url(images/bg.png);
+    font-family: sans-serif;
+    width: 800px;
+    margin: auto;
+    
+}
+
+section {
+    width: 800px;
+    margin: auto;
+}
+
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: 150px;
+    width: 450px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: darkslategrey;
+    color: white; 
+    text-align: center;
+    
+}
+
+a:hover {
+    background: white;
+
+
+}
+div {
+    text-align: center;
+
+}
+.red {
+    color: lightpink;
+}
+.beige {
+    color: beige
+}
+
+.box1 {
+    background: darkslategrey;
+    color: white;
+
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: left
+}
+.box2 {
+
+    background: darkslategrey;
+    color: white;
+
+    width: 400px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: left
+
+}
+.color { 
+    color: darkslategray; 
+
+}
+#LeftColor {
+    color: darkslategray;
+    text-align: left;
+
+}
+.box3 {
+    background: darkslategrey;
+    color: white;
+
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 10px;
+    text-align: left;
+}
+
+.center {
+    text-align: center
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%
+}
+.icon {
+    width: 30px;
+    background-color: lightpink;
+
+}
+.icon:hover {
+    background-color: darkslategray; 
+}
+
+.instagram {
+    background-color: darkslategray;
+    color: lightpink;
+    width: 80px; 
+    padding: 5px 5px 5px 5px; 
+
+}
+p4 {
+    text-decoration: underline; 
+}
