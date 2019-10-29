@@ -133,11 +133,14 @@ button {
     color: white;
     background-color: grey;
     height: 30px;
-    
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .left {
     text-align: left;
+    
 }
 .Datenschutz:hover {
     background: transparent;
