@@ -32,6 +32,7 @@ a:hover {
 
 }
 div {
+    position: relative;
     text-align: center;
 
 }
@@ -43,44 +44,45 @@ div {
 }
 
 .box1 {
-    background: darkslategrey;
-    color: white;
-
-    width: 300px;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
     text-align: left
 }
 .box2 {
-
-    background: darkslategrey;
-    color: white;
-
-    width: 400px;
-    height: 50px;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
     text-align: left
 
 }
+
+input {
+    width: 270px;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+}
+
+
+textarea {
+    width: 400px;
+    height: 50px;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: 1px solid white;
+    background-color: grey;
+}
+
 .color { 
     color: darkslategray; 
 
 }
 #LeftColor {
-    color: darkslategray;
+    color: grey;
     text-align: left;
 
 }
-.box3 {
-    background: darkslategrey;
-    color: white;
 
-    width: 100px;
-    padding: 10px 10px 10px 10px;
-    margin: 5px 5px 5px 10px;
-    text-align: left;
-}
 
 .center {
     text-align: center
@@ -92,13 +94,19 @@ img {
     margin-right: auto;
     width: 97%
 }
+
 .icon {
-    width: 30px;
-    background-color: lightpink;
+    width: 40px;
+    background-color:none;
+    margin: auto;
+    position: relative;
+    bottom: 59px; 
+    left: 42px;
+
 
 }
 .icon:hover {
-    background-color: darkslategray; 
+    background-color: lightgray; 
 }
 
 .instagram {
@@ -108,6 +116,30 @@ img {
     padding: 5px 5px 5px 5px; 
 
 }
+
 p4 {
     text-decoration: underline; 
+}
+::placeholder {
+    color: white; 
+}
+.Datenschutz {
+    color: grey;
+    background: transparent;
+}
+button {
+    width: 80px;
+    border-radius: 0px;
+    color: white;
+    background-color: grey;
+    height: 30px;
+    
+}
+
+.left {
+    text-align: left;
+}
+.Datenschutz:hover {
+    background: transparent;
+
 }
