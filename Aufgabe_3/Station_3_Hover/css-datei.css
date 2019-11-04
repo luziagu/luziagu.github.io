@@ -17,15 +17,15 @@ img {
 
 .text {
     position: absolute;
-    top: 280px;
-    left: 475px; 
+    top: 60px;
+    left: 40px; 
     color: white; 
 }
 
 .eins {
     position: absolute;
-    top: 380px;
-    left: 475px; 
+    top: 220px;
+    left: 400px; 
 
 }
 :hover.eins {
@@ -34,8 +34,8 @@ img {
 
 .zwei {
     position: absolute;
-    top: 480px;
-    left: 575px; 
+    top: 190px;
+    left: 100px; 
 }
 :hover.zwei {
     background-image: url(images/stern_hover.png)
@@ -44,8 +44,8 @@ img {
 .drei {
 
     position: absolute;
-    top: 330px;
-    left: 700px; 
+    top:  100px;
+    left: 190px; 
 }
 :hover.drei {
     background-image: url(images/stern_hover.png)
@@ -53,8 +53,8 @@ img {
 
 .vier {
     position: absolute;
-    top: 450px;
-    left: 900px; 
+    top: 120px;
+    left: 400px; 
 }
 
 :hover.vier {

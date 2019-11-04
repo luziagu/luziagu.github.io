@@ -20,8 +20,8 @@ img {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
-    top: 230px;
-    left: 475px; 
+    top: 60px;
+    left: 60px; 
     color: white; 
     font-size: 20px;
 
@@ -30,8 +30,8 @@ h1 {
 
 .text {
     position: absolute;
-    top: 470px;
-    left: 450px; 
+    top: 270px;
+    left: 50px; 
     color: white; 
     display: grid;
     grid-template-columns: 150px 100px; 
@@ -42,8 +42,8 @@ h1 {
 }
 .zweiteSpalte {
     position: absolute;
-    top: 470px;
-    left: 650px; 
+    top: 270px;
+    left: 210px; 
     color: white; 
     display: grid;
     grid-template-columns: 150px 100px; 
@@ -52,8 +52,8 @@ h1 {
 
 p3 {
     position: absolute;
-    top: 470px;
-    left: 845px; 
+    top: 270px;
+    left: 370px; 
     color: white; 
     display: grid;
     grid-template-columns: 150px 100px; 
@@ -61,8 +61,8 @@ p3 {
 
 p4{
     position: absolute;
-    top: 300px;
-    left: 550px;
+    top: 130px;
+    left: 100px;
     color: white; 
     display: grid;
     grid-template-columns: 150px 100px;
@@ -71,8 +71,8 @@ p4{
 }
 p5 {
     position: absolute;
-    top: 300px;
-    left: 750px;
+    top: 130px;
+    left: 300px;
     color: white; 
     display: grid;
     grid-template-columns: 150px 100px;
