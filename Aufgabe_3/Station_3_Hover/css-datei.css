@@ -60,3 +60,9 @@ img {
 :hover.vier {
     background-image: url(images/stern_hover.png)
 }
+
+p1 {
+    position: absolute;
+    bottom: -50px; 
+    z-index: 2;
+}
