@@ -96,8 +96,8 @@ color: white;
     background: url(images/answer.png); 
     background-size: 100%;
     background-repeat: no-repeat; 
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .antwort-text {
@@ -127,6 +127,7 @@ footer{
 
 @media screen and (min-width: 600px) {
 
+
 .LinkStart {
     display: none; 
 }
@@ -154,5 +155,83 @@ footer{
     display: none; 
     }
 
-}
+body {
+        background-image: url(images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }   
 
+.LinkStart {
+
+        color: white;
+        padding: 15px; 
+        width: 80px; 
+        font-size: 20px; 
+        text-decoration: none; 
+        border-radius: 10%; 
+        background-color: brown; 
+        margin-left: auto; 
+        margin-right: auto;
+        text-align: center;
+        bottom: 0%;
+
+    }
+    
+a {
+        text-decoration: none; 
+        color: white; 
+    }
+.Frage-Bild{
+        width: 80%; 
+        margin-left: auto; 
+        margin-right: auto; 
+     
+     
+     }
+     
+ .Frage {
+     position: absolute;
+     font-size: 30px;
+     width: 60%; 
+     top: 10%;
+     left: 20%;
+     text-align: center; 
+     color: white; 
+     
+     }
+     
+.antwort {
+    position: relative;
+    width: 100%;
+    height: 50px; 
+    background: url(images/answer.png); 
+    background-size: 100%;
+        background-repeat: no-repeat; 
+     margin-top: 3%;
+    margin-bottom: 3%;
+
+     }
+     
+.antwort-text {
+     
+    position: absolute; 
+    font-size: 20px; 
+    width: 60%;
+    top: 30%;
+    left: 20%; 
+    text-align: center; 
+     
+     }
+     
+.antwort:hover {
+    background: url(images/answer_over.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+     
+     }
+footer{
+    position: relative;
+    text-align: center;
+    bottom: 0%; 
+     }
+   }
