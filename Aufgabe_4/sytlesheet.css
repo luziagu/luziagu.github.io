@@ -4,6 +4,10 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position:center; 
 }
 
 
@@ -14,11 +18,7 @@ body{
 /*Start*/
 
 @media screen and (max-width:600px){
-body {
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .Smartphone {
 display: none; 
@@ -31,14 +31,14 @@ display: none;
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
-    top: 10%;   
+    top: 20%;   
     color: white; 
     
     
    
 }
 .LinkStart {
-
+ 
     color: white;
     padding: 15px; 
     width: 80px; 
@@ -49,7 +49,7 @@ display: none;
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
-    bottom: 0%; 
+    
 
     
 
@@ -145,7 +145,8 @@ footer{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
+    background: none; 
    
 
 
@@ -155,11 +156,7 @@ footer{
     display: none; 
     }
 
-body {
-        background-image: url(images/bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }   
+  
 
 .LinkStart {
 
@@ -182,7 +179,7 @@ a {
         color: white; 
     }
 .Frage-Bild{
-        width: 80%; 
+        width: 50%; 
         margin-left: auto; 
         margin-right: auto; 
      
@@ -191,9 +188,9 @@ a {
      
  .Frage {
      position: absolute;
-     font-size: 30px;
+     font-size: 20px;
      width: 60%; 
-     top: 10%;
+     top: 7%;
      left: 20%;
      text-align: center; 
      color: white; 
@@ -203,12 +200,12 @@ a {
 .antwort {
     position: relative;
     width: 100%;
-    height: 50px; 
+    height: 100px; 
     background: url(images/answer.png); 
     background-size: 100%;
         background-repeat: no-repeat; 
-     margin-top: 3%;
-    margin-bottom: 3%;
+     margin-top: 1%;
+    margin-bottom: 1%;
 
      }
      
