@@ -52,7 +52,7 @@ display: none;
 
 }
 div.LinkStart {
-    top: 0px; 
+    top: 20px; 
 }
 .LinkStart:hover {
     transform: scale(1.1);
