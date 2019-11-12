@@ -26,36 +26,33 @@ display: none;
 
 
 .Container {
-    width: 80%; 
-    padding: 2%; 
+    width: 70%; 
+    padding: 10%; 
     margin-left: auto; 
     margin-right: auto;
-    text-align: center;
-    top: 20%;   
-    color: white; 
+    text-align: center;  
+    color:steelblue; 
+ 
     
     
    
 }
 .LinkStart {
- 
-    color: white;
+
     padding: 15px; 
     width: 80px; 
     font-size: 20px; 
     text-decoration: none; 
     border-radius: 10%; 
-    background-color: brown; 
+    background-color: steelblue; 
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
-    
+    transform: scale(1); 
 
-    
-
-
-
-
+}
+.LinkStart:hover {
+    transform: scale(1.1);
 }
 
 a {
@@ -127,6 +124,10 @@ footer{
 
 @media screen and (min-width: 600px) {
 
+body {
+    background-image: none; 
+}   
+
 
 .LinkStart {
     display: none; 
@@ -147,7 +148,10 @@ footer{
     top: 50%;
     transform: translate(-50%, -50%); 
     background: none; 
-   
+    color: white; 
+    background-color: darkgray; 
+    padding: 50px; 
+    text-align: center; 
 
 
 }
@@ -156,7 +160,14 @@ footer{
     display: none; 
     }
 
-  
+.Hintergrund 
+{
+background-image: url(images/bg.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;  
+     
+}
 
 .LinkStart {
 
@@ -181,8 +192,7 @@ a {
 .Frage-Bild{
         width: 50%; 
         margin-left: auto; 
-        margin-right: auto; 
-     
+        margin-right: auto;
      
      }
      
