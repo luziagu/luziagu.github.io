@@ -38,7 +38,7 @@ display: none;
    
 }
 .LinkStart {
-
+    position: relative;
     padding: 15px; 
     width: 80px; 
     font-size: 20px; 
@@ -50,6 +50,9 @@ display: none;
     text-align: center;
     transform: scale(1); 
 
+}
+div.LinkStart {
+    top: 0px; 
 }
 .LinkStart:hover {
     transform: scale(1.1);
