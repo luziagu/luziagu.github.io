@@ -10,7 +10,7 @@ var emissionWorld = emissionAsia + emissionAustralia + emissionNorthAmerica + em
 var relativEmissionEurop = emissionEurop / emissionWorld;
 console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + relativEmissionEurop * 100 + " %");
 var EmissionEuropa2008 = 4965.7;
-var EmissionEuropadifference = EmissionEuropa2008 - emissionEurop;
+var EmissionEuropadifference = emissionEurop - EmissionEuropa2008;
 var EmissionEruopaProzent = EmissionEuropadifference / EmissionEuropa2008;
 console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + EmissionEruopaProzent * 100 + " % verändert");
 var emissionMinusEurop = emissionEurop - EmissionEuropa2008;
@@ -50,7 +50,7 @@ console.log("Die Emission von Nord-Amerika ist: " + emissionNorthAmerica + "kgCO
 var relativEmissionNorthAmerica = emissionNorthAmerica / emissionWorld;
 console.log("Relativ zur Gesamtemission der Welt verursacht Nord-Amerika damit " + relativEmissionNorthAmerica * 100 + " %");
 var EmissionNorthAmerica2008 = 6600.4;
-var EmissionNorthAmericadifference = EmissionNorthAmerica2008 - emissionNorthAmerica;
+var EmissionNorthAmericadifference = -emissionNorthAmerica - EmissionNorthAmerica2008;
 var EmissionNorthAmericaProzent = EmissionNorthAmericadifference / EmissionNorthAmerica2008;
 console.log("Für Nord-Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + EmissionNorthAmericaProzent * 100 + " % verändert");
 var emissionMinusNorthAmerica = emissionNorthAmerica - EmissionNorthAmerica2008;

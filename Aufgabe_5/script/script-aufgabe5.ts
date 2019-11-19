@@ -69,7 +69,7 @@ var relativEmissionSouthAmerica: number = emissionSouthAmerica/ emissionWorld;
 console.log("Relativ zur Gesamtemission der Welt verursacht Süd-Amerika damit "  + relativEmissionSouthAmerica *100 + " %");
 
 var EmissionSouthAmerica2008: number = 1132.6; 
-var EmissionSouthAmericadifference: number = emissionSouthAmerica -EmissionSouthAmerica2008; 
+var EmissionSouthAmericadifference: number = emissionSouthAmerica - EmissionSouthAmerica2008; 
 var EmissionSouthAmericaProzent: number = EmissionSouthAmericadifference / EmissionSouthAmerica2008 ; 
 
 console.log("Für Süd-Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + EmissionSouthAmericaProzent *100 + " % verändert");
