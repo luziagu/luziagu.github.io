@@ -16,9 +16,9 @@ function FunctionEurope () {
 document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in Europe";
 document.querySelector(".NumberEmission").innerHTML = "" + emissionEurop;
 document.querySelector(".TextEmission"). innerHTML = "Emission absolute of Europe in 2018"; 
-document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionEurop; 
-document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionEruopaProzent; 
-document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusEurop; 
+document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionEurop.toFixed(2) + " %"; 
+document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionEruopaProzent.toFixed(2) +" %"; 
+document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusEurop.toFixed(2); 
 document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionEurop + '%');
 }
 
@@ -41,9 +41,9 @@ function FunctionAsien () {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in Asia";
     document.querySelector(".NumberEmission").innerHTML = "" + emissionAsia;
     document.querySelector(".TextEmission"). innerHTML = "Emission absolute of Asia in 2018"; 
-    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAsien; 
-    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAsiaProzent; 
-    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAsia; 
+    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAsien.toFixed(2)+ " %"; 
+    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAsiaProzent.toFixed(2)+ " %"; 
+    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAsia.toFixed(2); 
     document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionAsien + '%');
     }
     window.addEventListener('load', function () {
@@ -64,9 +64,9 @@ function FunctionAfrika () {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in Africa";
     document.querySelector(".NumberEmission").innerHTML = "" + emissionAsia;
     document.querySelector(".TextEmission"). innerHTML = "Emission absolute of Africa in 2018"; 
-    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAfrica; 
-    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAfricaProzent; 
-    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAfrica; 
+    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAfrica.toFixed(2)+ " %"; 
+    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAfricaProzent.toFixed(2)+ " %"; 
+    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAfrica.toFixed(2); 
     document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionAfrica + '%');
     }
     window.addEventListener('load', function () {
@@ -86,9 +86,9 @@ function FunctionSüdAmerika () {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in South-America";
     document.querySelector(".NumberEmission").innerHTML = "" + emissionSouthAmerica;
     document.querySelector(".TextEmission"). innerHTML = "Emission absolute of South-America in 2018"; 
-    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionSouthAmerica; 
-    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionSouthAmericaProzent; 
-    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusSouthAmerica; 
+    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionSouthAmerica.toFixed(2)+ " %"; 
+    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionSouthAmericaProzent.toFixed(2)+ " %"; 
+    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusSouthAmerica.toFixed(2); 
     document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionSouthAmerica + '%');
     }
     window.addEventListener('load', function () {
@@ -108,9 +108,9 @@ function FunctionNorthAmerica () {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in North-America";
     document.querySelector(".NumberEmission").innerHTML = "" + emissionNorthAmerica;
     document.querySelector(".TextEmission"). innerHTML = "Emission absolute of North-America in 2018"; 
-    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionNorthAmerica; 
-    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionNorthAmericaProzent; 
-    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusNorthAmerica; 
+    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionNorthAmerica.toFixed(2)+ " %"; 
+    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionNorthAmericaProzent.toFixed(2)+ " %"; 
+    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusNorthAmerica.toFixed(2); 
     document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionNorthAmerica + '%');
     }
     window.addEventListener('load', function () {
@@ -130,9 +130,9 @@ function FunctionAustralien () {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in Australia";
     document.querySelector(".NumberEmission").innerHTML = "" + emissionAustralia;
     document.querySelector(".TextEmission"). innerHTML = "Emission absolute of Australia in 2018"; 
-    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAustralia; 
-    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAustraliaProzent; 
-    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAustralia; 
+    document.querySelector(".RelativNumber"). innerHTML = "" + relativEmissionAustralia.toFixed(2)+ " %"; 
+    document.querySelector(".NumberGrowth"). innerHTML = "" + EmissionAustraliaProzent.toFixed(2)+ " %"; 
+    document.querySelector(".NumberDifference"). innerHTML = "" + emissionMinusAustralia.toFixed(2); 
     document.querySelector(".chart").setAttribute('style', 'height:' + relativEmissionAustralia + '%');
     }
     window.addEventListener('load', function () {
