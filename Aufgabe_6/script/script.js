@@ -44,7 +44,7 @@ var emissionMinusAsia = emissionAsia - EmissionAsia2008;
 /*Afrika*/
 function FunctionAfrika() {
     document.querySelector(".MainTitle").innerHTML = "Carbon Dioxide Emissions in Africa";
-    document.querySelector(".NumberEmission").innerHTML = "" + emissionAsia;
+    document.querySelector(".NumberEmission").innerHTML = "" + emissionAfrica;
     document.querySelector(".TextEmission").innerHTML = "Emission absolute of Africa in 2018";
     document.querySelector(".RelativNumber").innerHTML = "" + relativEmissionAfrica.toFixed(2) + " %";
     document.querySelector(".NumberGrowth").innerHTML = "" + EmissionAfricaProzent.toFixed(2) + " %";

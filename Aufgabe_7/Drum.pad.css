@@ -1,0 +1,125 @@
+body {
+    background: black; 
+    text-align: center;
+    overflow: hidden;
+    
+
+}
+
+.main{
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: translate(-50%, -50%);
+    width: 480px; 
+    left: 50%;
+    top: 40%;
+    text-align: center;
+    overflow: hidden;
+    width: 480px; 
+    position: absolute; 
+
+    
+
+}
+
+.button1{
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    border-radius: 5px;
+    margin: 1px; 
+    border: none; 
+    
+    
+
+ 
+}
+.button2 {
+
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+}
+.button3 {
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+   
+   
+}
+.button4 {
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+ 
+
+}
+.button5 {
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+  
+}
+.button6 {
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+   
+
+}
+.button7 {
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+
+}
+.button8 {
+    background-image:linear-gradient(#FF8C00, #ff7c11);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+}
+.button9 {
+    background-image:linear-gradient(#FF8C00, #ff7c11);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+   
+
+}
+
+.PlayButton {
+    position: fixed; 
+    left: 45%; 
+    top: 70%;
+}
