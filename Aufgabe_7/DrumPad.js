@@ -23,10 +23,10 @@ function play(myMP3) {
 }
 //7.2 Arrays
 var PlayButton = ["assets/laugh-1.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/kick.mp3", "assets/hihat.mp3", "assets/laugh-1.mp3"];
-function PlaySong() {
-    var sound = setInterval(Christmas, 400);
+function playbeat() {
+    var sound = setInterval(ChristmasPlay, 400);
     var index = 0;
-    function Christmas() {
+    function ChristmasPlay() {
         var Beat = new Audio(PlayButton[index]);
         index = index + 1;
         Beat.play();

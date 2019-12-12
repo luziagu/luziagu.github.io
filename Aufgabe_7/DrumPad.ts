@@ -26,13 +26,13 @@ function play(myMP3: string) {
 
 //7.2 Arrays
 
-var PlayButton: string[]= ["assets/laugh-1.mp3","assets/kick.mp3","assets/kick.mp3","assets/hihat.mp3","assets/kick.mp3","assets/kick.mp3","assets/hihat.mp3","assets/kick.mp3","assets/kick.mp3","assets/hihat.mp3","assets/laugh-1.mp3"]
-function PlaySong() {
-    var sound = setInterval(Christmas  ,400);
+var PlayButton: string[]= ["assets/laugh-1.mp3", "assets/kick.mp3", "assets/kick.mp3","assets/hihat.mp3","assets/kick.mp3","assets/kick.mp3","assets/hihat.mp3","assets/kick.mp3","assets/kick.mp3","assets/hihat.mp3","assets/laugh-1.mp3"]
+function playbeat () {
+    var sound = setInterval(ChristmasPlay  ,400);
     var index: number = 0;
     
 
-    function Christmas(){
+    function ChristmasPlay(){
     var Beat:HTMLAudioElement = new Audio(PlayButton[index]);
     index = index +1; 
     Beat.play(); }

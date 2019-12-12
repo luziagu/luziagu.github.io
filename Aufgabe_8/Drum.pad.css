@@ -1,0 +1,173 @@
+body {
+    background: black; 
+    text-align: center;
+    overflow: hidden;
+    
+
+}
+
+.main{
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: translate(-50%, -50%);
+    width: 250px; 
+
+}
+
+.button1{
+    position: absolute; 
+    left: 10px;
+    top: 0px;
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    border-radius: 5px;
+    margin: 1px; 
+    border: none; 
+    
+    
+
+ 
+}
+.button2 {
+    position: absolute; 
+    left: 165px;
+    top: 0px;
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+}
+.button3 {
+    position: absolute; 
+    left: 320px;
+    top: 0px;
+    background-image: linear-gradient(#4169D1,#00F);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+   
+   
+}
+.button4 {
+    position: absolute; 
+    left: 10px;
+    top: 155px;
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+ 
+
+}
+.button5 {
+    position: absolute; 
+    left: 165px;
+    top: 155px;
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+  
+}
+.button6 {
+    position: absolute; 
+    left: 320px;
+    top: 155px;
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+   
+
+}
+.button7 {
+    position: absolute; 
+    left: 10px;
+    top: 310px;
+    background-image: linear-gradient(#DC143C,#f00);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+
+}
+.button8 {
+    position: absolute; 
+    left: 165px;
+    top: 310px;
+    background-image:linear-gradient(#FF8C00, #ff7c11);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+
+
+}
+.button9 {
+    position: absolute; 
+    left: 320px;
+    top: 310px;
+    background-image:linear-gradient(#FF8C00, #ff7c11);
+    height: 150px;
+    width: 150px; 
+    margin: 1px; 
+    border-radius: 5px;
+    border: none; 
+   
+
+}
+
+#play {
+    position: absolute; 
+    left: 55px; 
+    top: 480px;;
+    color: white; 
+    font-size: 50px; 
+}
+#play:hover{
+    color: #DC143C;
+}
+
+#microphone {
+
+    position: absolute; 
+    left: 230px; 
+    top: 480px;
+    color: white; 
+    font-size: 50px; 
+}
+#microphone:hover {
+    color: #4169D1;
+}
+#trash {
+
+    position:  absolute; 
+    left: 370px; 
+    top: 480px;
+    color: white; 
+    font-size: 50px; 
+   
+}
+
+#trash:hover {
+    color: #FF8C10;
+}
