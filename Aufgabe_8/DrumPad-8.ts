@@ -36,14 +36,14 @@ function PlaySong(): void {
     record = false;
 
 
-    if (document.getElementById("play").classList.contains("fa-play")) {
-        document.getElementById("play").classList.remove("fa-play");
-        document.getElementById("play").classList.add("fa-stop");
+    if (document.querySelector("#play").classList.contains("fa-play")) {
+        document.querySelector("#play").classList.remove("fa-play");
+        document.querySelector("#play").classList.add("fa-stop");
         intervalloop = setInterval(Christmas, 400);
 
     } else {
-        document.getElementById("play").classList.remove("fa-stop");
-        document.getElementById("play").classList.add("fa-play");
+        document.querySelector("#play").classList.remove("fa-stop");
+        document.querySelector("#play").classList.add("fa-play");
         clearInterval(intervalloop);
 
     }
@@ -53,7 +53,7 @@ function PlaySong(): void {
         index += 1;
         if (index >= playbutton.length) {
             index = 0;
-        }
+        }   
         
     }
 
@@ -62,6 +62,7 @@ function PlaySong(): void {
 
 function deleteplaybutton(): void {
     playbutton = [];
+   //* record = true; *//
 }
 
 function Recordplaybutton(): void {
