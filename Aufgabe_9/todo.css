@@ -45,15 +45,16 @@ p{
     text-align: center;
     width: 500px;
     height: 55px;
+   
 }
 
 .fa-trash-alt {
     color: grey;
     opacity: 0.1;
-    right: 480px;
-    position: absolute;
+    right: 480px; 
     font-size: 30px;  
     vertical-align: middle;
+    float: right;
 
 }
 
@@ -69,13 +70,18 @@ p{
 }
 
 #Add {
-    background: white; 
+    background: rgb(209, 167, 167); 
     border-radius: 0px; 
     border: none; 
     position: relative;
-    left: 210px;  
-    width: 90px;
-    color:#999999;
+    left: 420px; 
+    top: -45px; 
+    width: 70px;
+    height: 35px;
+    border-radius: 6px;
+    color:#444444;
+    font-size: 20px;
+    
 }
 
 

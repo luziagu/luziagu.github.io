@@ -16,6 +16,13 @@ window.addEventListener("load", function(): void {
         toDoListFunction(); 
     }); 
 
+    input.addEventListener("keydown", function(e) {
+        if (e.keyCode === 13) {
+            toDoList.push(input.value);
+            input.value = "";
+            toDoListFunction();
+        }
+    });
 
 
 });

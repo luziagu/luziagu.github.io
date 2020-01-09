@@ -7,6 +7,13 @@ window.addEventListener("load", function () {
         input.value = "";
         toDoListFunction();
     });
+    input.addEventListener("keydown", function (e) {
+        if (e.keyCode === 13) {
+            toDoList.push(input.value);
+            input.value = "";
+            toDoListFunction();
+        }
+    });
 });
 function toDoListFunction() {
     document.querySelector(".TotalText").innerHTML = toDoList.length + " in total";
