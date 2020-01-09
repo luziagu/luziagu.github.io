@@ -1,4 +1,4 @@
-var toDoList = ["Get ready for NYE", "Make Dinner", "Clean the house"];
+var toDoList = ["Get ready for your exams", "Write your exams", "Relax"];
 window.addEventListener("load", function () {
     toDoListFunction();
     var input = document.querySelector(".AddTask");

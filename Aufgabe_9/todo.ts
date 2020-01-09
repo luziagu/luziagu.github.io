@@ -1,6 +1,6 @@
 
 
-var toDoList: string [] = ["Get ready for NYE", "Make Dinner", "Clean the house"]; 
+var toDoList: string [] = ["Get ready for your exams", "Write your exams", "Relax"]; 
 
 
 window.addEventListener("load", function(): void {
