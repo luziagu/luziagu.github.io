@@ -10,8 +10,33 @@ main {
 }
 
 #counter {
+    position: relative;
     color: grey;
+    left: -85px;
+    
+
+    
 }
+
+#done {
+    position: relative;
+    color: grey; 
+    z-index: 1;
+    left: 56px;
+    top: -67px;
+    float: none; 
+
+}
+
+#open {
+    position: relative;
+    color: grey; 
+    top: -34px;
+    left: -8px;
+}
+
+
+
 
 .inputGroup {
     position: relative;

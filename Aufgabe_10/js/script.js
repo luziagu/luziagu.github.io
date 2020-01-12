@@ -39,6 +39,8 @@ var inputDOMElement;
 var addButtonDOMElement;
 var todosDOMElement;
 var counterDOMElement;
+var openDOMElement;
+var doneDOMElement;
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
@@ -53,6 +55,8 @@ window.addEventListener("load", function () {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    openDOMElement = document.querySelector("#open");
+    doneDOMElement = document.querySelector("#done");
     /**
      * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
      * auf den AddToDo Button gesetzt werden.
@@ -108,7 +112,20 @@ function drawListToDOM() {
     updateCounter();
 }
 function updateCounter() {
-    counterDOMElement.innerHTML = toDos.length + " in total ";
+    var toDoDone = 0;
+    var toDoOpen = 0;
+    for (var index = 0; index < toDos.length; index++) {
+        if (toDos[index].todoChecked == true) {
+            toDoDone++;
+        }
+        else {
+            toDoOpen++;
+        }
+        ;
+    }
+    counterDOMElement.innerHTML = toDos.length + " in total | ";
+    openDOMElement.innerHTML = toDoDone + " done | ";
+    doneDOMElement.innerHTML = toDoOpen + " open";
 }
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:
@@ -127,8 +144,10 @@ function addTodo() {
          * Status der ToDos abbildet, für dieses ToDo (weil selbe Stelle im Array)
          * der Status "unchecked", hier false, gepusht.
          */
-        toDos.todoText.unshift(inputDOMElement.value);
-        toDos.todoChecked.unshift(false);
+        toDos.unshift({
+            todosText: inputDOMElement.value,
+            todoChecked: false
+        });
         // Jetzt wird der Text aus dem Eingabefeld gelöscht
         inputDOMElement.value = "";
         /**
@@ -172,8 +191,8 @@ function deleteTodo(index) {
      * Jetzt muss diese Stelle beider Arrays gelöscht werden,
      * das ToDo-Text-Array und das Checked/Unchecked-Array
      */
-    toDos.todosText.splice(index, 1);
-    toDos.todosChecked.splice(index, 1);
+    // remove object
+    toDos.splice(index, 1);
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
