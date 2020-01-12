@@ -7,8 +7,6 @@ var todosDOMElement: HTMLElement;
 window.addEventListener("load", function(): void {
 
     todosDOMElement = document.querySelector("#ToDo");
-
-    
     toDoListFunction(); 
 
     var input: HTMLInputElement = document.querySelector(".AddTask");
@@ -38,28 +36,22 @@ function toDoListFunction(): void {
     document.querySelector("#ToDo").innerHTML = "";
     
 
-    for (var index: number = 0; index < toDoList.length; index++) {
+    for (let index: number = 0; index < toDoList.length; index++) {
 
-        let todo: HTMLElement = document.createElement("div");
-        todo.classList.add("todo");
-
-
-        document.querySelector("#ToDo").innerHTML += "<p>" + "<label class='container'><input type='checkbox'><span class='checkmark'></span></label>" + "<i class='far fa-circle'></i>" + " " + toDoList[index] + "<i class='far fa-trash-alt'></i>" + "</p>";
-  
-        document.querySelector(".fa-trash-alt").addEventListener("click", function(): void {
+        let todocontainer: HTMLElement = document.createElement("div");
+        todocontainer.classList.add("todo");
+        todocontainer.innerHTML += "<p>" + "<label class='container'><input type='checkbox'><span class='checkmark'></span></label>" + "<i class='far fa-circle'></i>" + " " + toDoList[index] + "<i class='far fa-trash-alt'></i>" + "</p>";
+        
+        todocontainer.querySelector(".fa-trash-alt").addEventListener("click", function(): void {
             console.log("ich wurde geklickt");
-            deleteTodo(index);
+            toDoList.splice(index, 1);
+            toDoListFunction();
+
         });
-        todosDOMElement.appendChild(todo);
+        todosDOMElement.appendChild(todocontainer);
     }
 
-    function deleteTodo(index: number): void {
-
-        toDoList.splice(index, 1);
-
-        toDoListFunction();
-
-    }
+   
 }
 
 

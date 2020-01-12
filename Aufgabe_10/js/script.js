@@ -162,11 +162,6 @@ function toggleCheckState(index) {
      */
     drawListToDOM();
 }
-function todoCheckedLength(index) {
-    if (toDos[index].todoChecked) {
-        counterDOMElement;
-    }
-}
 /**
  * Diese Funktion löscht ein ToDo
  */
