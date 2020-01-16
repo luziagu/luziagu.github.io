@@ -259,9 +259,8 @@ window.addEventListener("load", function(): void {
         indexes: ["Erstelle Aufgabe *"], 
         smart: true,
         action: function(i: any, wildcard: string): void {
-            alert("Neue Aufgabe: " + wildcard);
-
-            toDos.push( 
+            
+            toDos.unshift( 
                 { 
                     todosText: (wildcard),
                     todoChecked: false
@@ -270,7 +269,7 @@ window.addEventListener("load", function(): void {
 
                  
             );
-            console.log("ich wurde aufgerufen"); 
+            
 
             drawListToDOM();
         }

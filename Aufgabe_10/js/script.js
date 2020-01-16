@@ -121,7 +121,6 @@ function updateCounter() {
         else {
             toDoOpen++;
         }
-        ;
     }
     counterDOMElement.innerHTML = toDos.length + " in total | ";
     openDOMElement.innerHTML = toDoDone + " done | ";
@@ -199,4 +198,33 @@ function deleteTodo(index) {
      */
     drawListToDOM();
 }
+window.addEventListener("load", function () {
+    var artyom = new Artyom();
+    artyom.addCommands({
+        indexes: ["Erstelle Aufgabe *"],
+        smart: true,
+        action: function (i, wildcard) {
+            toDos.unshift({
+                todosText: (wildcard),
+                todoChecked: false
+            });
+            drawListToDOM();
+        }
+    });
+    function startContinuousArtyom() {
+        artyom.fatality();
+        setTimeout(function () {
+            artyom.initialize({
+                lang: "de-DE",
+                continuous: true,
+                listen: true,
+                interimResults: true,
+                debug: true
+            }).then(function () {
+                console.log("Ready!");
+            });
+        }, 250);
+    }
+    startContinuousArtyom();
+});
 //# sourceMappingURL=script.js.map
