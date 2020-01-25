@@ -256,7 +256,7 @@ window.addEventListener("load", function(): void {
     const artyom: any = new Artyom();
     
     artyom.addCommands({ 
-        indexes: ["Erstelle Aufgabe *"], 
+        indexes: ["Erstelle Aufgabe *", "erstelle aufgabe"], 
         smart: true,
         action: function(i: any, wildcard: string): void {
             
