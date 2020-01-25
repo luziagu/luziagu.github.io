@@ -9,10 +9,6 @@ interface SpielKarte {
     farbe: string; 
 }
 
-var farbeRed: string = "red";
-var farbeGreen: string = "green";
-var farbeBlue: string = "blue";
-var farbeYellow: string = "yellow";
 
 var karte:  SpielKarte [] = [
 
@@ -58,7 +54,7 @@ var karte:  SpielKarte [] = [
 
 var spielerHand: SpielKarte [] = [];
 var gegnerHand: SpielKarte [] = [];
-var ablegeStapel: SpielKarte[] = [];
+var ablegeStapel: SpielKarte[] = [];  //Arrays des Spilers, Gegner, Kartenstapel und Ablegestapel
 
 
 var cardDOMElement: HTMLElement;
@@ -66,11 +62,10 @@ var spielerDOMElememt: HTMLElement;
 var gegnerDOMElememt: HTMLElement;
 var spielStartDOMElement: HTMLElement; 
 var gegnerZiehenDOMElement: HTMLElement; 
-var ablegeStapelDOMElement: HTMLElement; 
+var ablegeStapelDOMElement: HTMLElement; // Variablen werden deklariert die später die DOM-Elemente speichern
 
 
-
-
+//laden des DOMS 
 window.addEventListener("load", function(): void {
 
     spielStartDOMElement = document.querySelector(".SpielStartButton");
@@ -81,14 +76,17 @@ window.addEventListener("load", function(): void {
     ablegeStapelDOMElement = document.querySelector(".ablegeStapel"); 
 
 
+    //Event-Listener der auf den Button für den Spielstart verweist, durch klicken lässt sich das Spiel starten
     spielStartDOMElement.addEventListener("click", function(): void {
 
         mischeKarten();
         spielKarten(); 
+        ablegeStapelPush (); 
 
 
     });
 
+    //Event-Listener der auf den DIV des Kartenstapels zugreift und zwei funktionen bei klich aufruft 
     cardDOMElement.addEventListener("click", function(): void {
         spielerHandStapel();
         spielKarten(); 
@@ -104,22 +102,14 @@ window.addEventListener("load", function(): void {
 
     });
 
-    cardDOMElement.addEventListener("click", function(): void {
-
-        console.log("Ich wurde geklickt");
-       
-        spielKarten();
-       
-    
-    
-    });
+ 
     
     spielKarten();
 }); 
 
 
 
-
+// Funktion, die eine Schleife für das Array des Kartenstapels setzt und so die 32 Karten aufeinander legt 
 function spielKarten(): void {
   
 
@@ -140,9 +130,9 @@ function spielerHandStapel(): void {
 
 
     var letzteKarteVomStapel = karte.pop();
-    spielerHand.push(letzteKarteVomStapel); 
+    spielerHand.push(letzteKarteVomStapel); //immmer die letzte Karte des Kartenstapels wird aus dem Array gelöscht und in die Spielerhand gepusht
 
-    var element: HTMLElement = document.createElement("div");
+    var element: HTMLElement = document.createElement("div"); //erstellen eines Div-Elements für die ins neue Array gepushten Karten 
     element.classList.add(".kartenWrapper");
 
     var randomId: string = (Math.random() * 10000).toFixed(0);
@@ -153,7 +143,9 @@ function spielerHandStapel(): void {
 
 
     spielerDOMElememt.appendChild(element);
-    
+
+
+    //Bei klick auf die Karten des spielers sollen die Karten gepusht werden 
     spielerDOMElememt.querySelector("#uniqueID" + randomId).addEventListener("click", function(): void {
         console.log("ich wurde geklickt: " + randomId);
 
@@ -180,6 +172,8 @@ function spielerHandStapel(): void {
 
 function mischeKarten(): void {
 
+    //Die Karten des Kartenstapels werden hier bei klick auf den Start-Button gemischelt. 
+
     var tmp, rand;
     for (var i: number = 0; i < karte.length; i++) {
       rand = Math.floor(Math.random() * karte.length);
@@ -191,11 +185,22 @@ function mischeKarten(): void {
     console.log("mischen"); 
 }
 
+
+
 function ablegeStapelPush (): void {
 
+    
+    ablegeStapel.push(karte[karte.length - 1]); 
+    karte.splice(karte.length - 1, 1); //die erste Karte vom Kartenstapel wird in das Array vom Ablegstapel gepusht. 
 
-    var kartenSpieler = spielerHand.pop();
-    ablegeStapel.push(kartenSpieler); 
+    
+
+    ablegeStapelDOMElement.innerHTML = "<div class='front' style='background-color: " +  " '> " 
+    + ablegeStapel +  "</div>";               
+
+ 
+
+    console.log(ablegeStapel); 
     /*
     gegnerDOMElememt.innerHTML += "<div class='front gegnerCard' style='background-color: " + kartenSpieler.farbe + " '> " 
     + kartenSpieler.wertigkeit +  "</div>"; */
