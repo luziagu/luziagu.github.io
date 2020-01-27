@@ -1,0 +1,154 @@
+ 
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../graphics/Background-2.jpg");
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spielfeld {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gegner {
+    position: relative;
+    top: -110px;
+    left: 5%; 
+    width:  60em;
+    height: 9em;
+    border: solid;
+    border-color:  rgb(216, 196, 165);;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    background-color: #eedbd02d; 
+}
+
+.grid-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+
+.kartenblatt, ablegestapel {
+    display: inline;
+    left: 10%; 
+}
+
+.spieler {
+    position: relative;
+    bottom: -90px;
+    width:  60em;
+    height: 9em;
+    left: 5%; 
+    border: solid;
+    border-color:  rgb(216, 196, 165);;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    background-color: #eedbd02d; 
+}
+
+button {
+    position: absolute;
+    top: 41%;
+    left: 7%;
+    border-color: rgb(216, 196, 165);
+    border-style: solid;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    border-radius: 6px;
+    color: rgb(216, 196, 165);
+    font-size: 16px;
+    background-color: transparent;
+    border-width: 2px;
+    
+}
+
+.cardback {
+    background-image: url(../graphics/cardback.png);
+    background-repeat: repeat; 
+    background-size: 51%; 
+   
+}
+.cardface {
+  
+    color: #ffffff;
+    border-color: #808080 #000000 #000000 #808080;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 7px;
+    color: #000000;
+    font-size: 20pt;
+    width:  3.75em;
+    height: 5.00em;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin: 5px;
+}
+.kartenwrapper {
+    float: left;
+}
+
+.spielerkarten {
+   display: inline-block;
+   position: relative;
+   top: -10px;
+   margin: 5px;
+
+}
+.spielerkarten:hover {
+    cursor: pointer;
+}
+
+
+
+.wertigkeit {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 4px;
+    left: -30px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    
+}
+
+.wertigkeitUmgedreht {
+
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 30px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+
+
+}
+
+
+footer {
+    background-color: grey; 
+    color: white; 
+    position: fixed; 
+    bottom: 0; 
+    height: 25px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
